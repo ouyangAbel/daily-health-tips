@@ -148,30 +148,6 @@
         </div>
     </section>
 
-    <!-- Fitness & Exercise -->
-    <section class="section" style="background: var(--wood-beige-light);">
-        <div class="container" style="max-width: 900px;">
-            <div class="section-header scroll-unfold">
-                <div class="seal-heading">FITNESS</div>
-                <h2>Fitness & Exercise</h2>
-                <p>Ancient Chinese movement arts for strength, flexibility, and inner peace.</p>
-            </div>
-            <div id="fitness-list"></div>
-        </div>
-    </section>
-
-    <!-- Weekly Meal Plans -->
-    <section class="section">
-        <div class="container" style="max-width: 900px;">
-            <div class="section-header scroll-unfold">
-                <div class="seal-heading">NUTRITION</div>
-                <h2>Weekly Meal Plans</h2>
-                <p>Balanced Eastern-inspired meal plans updated weekly with detailed recipes.</p>
-            </div>
-            <div id="meal-list"></div>
-        </div>
-    </section>
-
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
@@ -236,18 +212,9 @@
         const fitnessCategories = ['Fitness & Qigong', 'Baduanjin', 'Tai Chi', 'Daoyin', 'Qigong', 'Bedtime Practice'];
         const mealCategories = ['Weekly Meal Plan'];
 
-        const fitnessGroups = [
-            { label: 'Baduanjin (八段锦)', match: c => c === 'Baduanjin' },
-            { label: 'Tai Chi (太极)', match: c => c === 'Tai Chi' },
-            { label: 'Daoyin (导引疗法)', match: c => c === 'Daoyin' },
-            { label: 'Morning Qigong (晨练气功)', match: c => c === 'Qigong' || c === 'Fitness & Qigong' },
-            { label: 'Bedtime Habits (睡前习惯)', match: c => c === 'Bedtime Practice' }
-        ];
-
         function isDailyTip(a) {
             return !fitnessCategories.includes(a.category) && !mealCategories.includes(a.category);
         }
-        function isMeal(a) { return mealCategories.includes(a.category); }
 
         function renderCard(article) {
             return `
@@ -269,30 +236,10 @@
 
         function renderArticles() {
             const sorted = [...articles].sort((a, b) => new Date(b.date) - new Date(a.date));
-
-            // Daily Tips
             const dailyTips = sorted.filter(isDailyTip);
             document.getElementById('daily-tips-list').innerHTML = dailyTips.length
                 ? dailyTips.map(a => renderCard(a)).join('')
                 : '<p style="text-align:center;color:var(--ink-gray);">Coming soon!</p>';
-
-            // Fitness - grouped by sub-category
-            const fitnessEl = document.getElementById('fitness-list');
-            let fitnessHtml = '';
-            fitnessGroups.forEach(g => {
-                const items = sorted.filter(a => g.match(a.category));
-                if (items.length) {
-                    fitnessHtml += `<div style="margin-bottom: 40px;"><h3 style="font-size:1.3rem; margin-bottom:20px; color:var(--indigo-blue); border-bottom: 2px solid var(--wood-beige); padding-bottom: 10px;">${g.label}</h3>${items.map(a => renderCard(a)).join('')}</div>`;
-                }
-            });
-            fitnessEl.innerHTML = fitnessHtml || '<p style="text-align:center;color:var(--ink-gray);">Coming soon!</p>';
-
-            // Meal Plans
-            const meals = sorted.filter(isMeal);
-            document.getElementById('meal-list').innerHTML = meals.length
-                ? meals.map(a => renderCard(a)).join('')
-                : '<p style="text-align:center;color:var(--ink-gray);">Coming soon!</p>';
-
             initScrollAnimations();
         }
 
