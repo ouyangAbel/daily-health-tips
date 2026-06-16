@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Daily Health Tips - Your daily source for Eastern wellness wisdom, traditional Chinese health practices, and holistic living advice.">
+    <meta name="keywords" content="daily health tips, Eastern wellness, Chinese health, TCM tips, holistic health advice">
+    <meta name="author" content="daily health tips">
+    <meta name="robots" content="index, follow">
+    
+    <title>Daily Health Tips - daily health tips</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <style>
+        .article-card {
+            background: var(--cream-white);
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid var(--wood-beige);
+            transition: all 0.4s ease;
+            margin-bottom: 30px;
+        }
+        .article-card:hover {
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-3px);
+        }
+        .article-card-inner {
+            display: grid;
+            grid-template-columns: 120px 1fr;
+            gap: 0;
+        }
+        .article-icon-section {
+            background: linear-gradient(135deg, var(--cinnabar-red) 0%, var(--cinnabar-red-dark) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+        }
+        .article-content-section {
+            padding: 30px;
+        }
+        .article-meta {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 12px;
+            font-size: 0.85rem;
+        }
+        .article-date {
+            color: var(--cinnabar-red);
+            font-weight: 600;
+        }
+        .article-category {
+            color: var(--indigo-blue);
+            background: var(--wood-beige-light);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+        }
+        .article-title {
+            font-size: 1.4rem;
+            margin-bottom: 12px;
+            color: var(--indigo-blue);
+            line-height: 1.3;
+        }
+        .article-excerpt {
+            color: var(--ink-gray);
+            line-height: 1.7;
+            margin-bottom: 16px;
+        }
+        .article-read-more {
+            color: var(--cinnabar-red);
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: gap 0.3s ease;
+        }
+        .article-read-more:hover {
+            gap: 10px;
+            color: var(--cinnabar-red-dark);
+        }
+        
+        @media (max-width: 600px) {
+            .article-card-inner {
+                grid-template-columns: 1fr;
+            }
+            .article-icon-section {
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon"></div>
+                <div>
+                    <span class="logo-text">daily health tips</span>
+                    <span class="logo-tagline">Ancient Wisdom • Modern Wellness</span>
+                </div>
+            </a>
+            
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="meal-plans.html" class="nav-link">Meal Plans</a></li>
+                <li><a href="fitness.html" class="nav-link">Fitness</a></li>
+                <li><a href="sleep.html" class="nav-link">Sleep Health</a></li>
+                <li><a href="tools.html" class="nav-link">Health Tools</a></li>
+                <li><a href="articles.html" class="nav-link active">Daily Tips</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="hero" style="min-height: 40vh; padding-top: 100px;">
+        <div class="container">
+            <div class="hero-content scroll-unfold" style="max-width: 100%; text-align: center;">
+                <span class="hero-badge">DAILY TIPS</span>
+                <h1>Daily Health Tips</h1>
+                <p>Fresh Eastern wellness wisdom delivered daily. Simple practices for a healthier, more balanced life.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles List -->
+    <section class="section">
+        <div class="container" style="max-width: 900px;">
+            <div class="section-header scroll-unfold">
+                <div class="seal-heading">WISDOM LIBRARY</div>
+                <h2>All Articles</h2>
+                <p>Browse our collection of daily health tips rooted in traditional Chinese wellness practices.</p>
+            </div>
+            
+            <div id="articles-container">
+                <!-- Articles will be loaded here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon"></div>
+                        <div>
+                            <span class="logo-text">daily health tips</span>
+                        </div>
+                    </a>
+                    <p>Bridging ancient Eastern wellness wisdom with modern health science. Your trusted source for daily health tips rooted in traditional Chinese medicine.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="meal-plans.html">Meal Plans</a></li>
+                        <li><a href="fitness.html">Fitness</a></li>
+                        <li><a href="sleep.html">Sleep Health</a></li>
+                        <li><a href="tools.html">Health Tools</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Exercises</h4>
+                    <ul class="footer-links">
+                        <li><a href="fitness.html#tai-chi">Tai Chi</a></li>
+                        <li><a href="fitness.html#baduanjin">Baduanjin</a></li>
+                        <li><a href="fitness.html#daoyin">Daoyin</a></li>
+                        <li><a href="fitness.html#qigong">Morning Qigong</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="footer-copyright">&copy; <span class="copyright-year">2026</span> Daily Health Tips. All rights reserved.</p>
+                <p class="footer-disclaimer">This website is for informational purposes only and does not constitute professional medical advice. Always consult with a qualified healthcare provider before starting any new health regimen.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/articles.js"></script>
+    
+    <script>
+        // Format date
+        function formatDate(dateString) {
+            const options = { year: 'numeric', month: 'long', day: 'numeric' };
+            return new Date(dateString).toLocaleDateString('en-US', options);
+        }
+        
+        // Render articles
+        function renderArticles() {
+            const container = document.getElementById('articles-container');
+            
+            if (!articles || articles.length === 0) {
+                container.innerHTML = '<p style="text-align: center; color: var(--ink-gray);">No articles yet. Check back soon!</p>';
+                return;
+            }
+            
+            // Sort by date (newest first)
+            const sortedArticles = [...articles].sort((a, b) => new Date(b.date) - new Date(a.date));
+            
+            container.innerHTML = sortedArticles.map((article, index) => `
+                <article class="article-card scroll-unfold" style="animation-delay: ${index * 0.1}s">
+                    <div class="article-card-inner">
+                        <div class="article-icon-section">
+                            ${article.icon}
+                        </div>
+                        <div class="article-content-section">
+                            <div class="article-meta">
+                                <span class="article-date">📅 ${formatDate(article.date)}</span>
+                                <span class="article-category">${article.category}</span>
+                            </div>
+                            <h3 class="article-title">${article.title}</h3>
+                            <p class="article-excerpt">${article.excerpt}</p>
+                            <a href="articles/${article.slug}.html" class="article-read-more">
+                                Read Full Tip →
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            `).join('');
+            
+            // Re-initialize scroll animations
+            initScrollAnimations();
+        }
+        
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            renderArticles();
+        });
+    </script>
+</body>
+</html>

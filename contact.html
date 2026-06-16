@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact daily health tips - Get in touch with our team for questions, feedback, or collaboration inquiries.">
+    <meta name="keywords" content="contact us, get in touch, customer support, feedback, Eastern health tips contact">
+    <meta name="author" content="daily health tips">
+    <meta name="robots" content="index, follow">
+    
+    <title>Contact Us - daily health tips</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <style>
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .contact-form {
+            background: var(--cream-white);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--wood-beige);
+        }
+        .contact-info {
+            padding: 20px 0;
+        }
+        .contact-item {
+            margin-bottom: 30px;
+        }
+        .contact-item h3 {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        .contact-item-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--cinnabar-red);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+        }
+        .contact-item p {
+            padding-left: 52px;
+            line-height: 1.6;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--ink-black);
+        }
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 12px 16px;
+            border: 2px solid var(--wood-beige-dark);
+            border-radius: 8px;
+            font-size: 1rem;
+            font-family: var(--font-body);
+            transition: border-color 0.3s ease;
+        }
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--cinnabar-red);
+        }
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+        .submit-btn {
+            width: 100%;
+            padding: 14px;
+            background: var(--cinnabar-red);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+        }
+        .submit-btn:hover {
+            background: var(--cinnabar-red-dark);
+            color: white;
+        }
+        .direct-email-section {
+            margin-top: 30px;
+            padding: 25px;
+            background: var(--wood-beige-light);
+            border-radius: 12px;
+            text-align: center;
+        }
+        .direct-email-section h3 {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+        .direct-email-link {
+            display: inline-block;
+            padding: 12px 30px;
+            background: var(--indigo-blue);
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .direct-email-link:hover {
+            background: var(--indigo-blue-dark);
+            color: white;
+        }
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon"></div>
+                <div>
+                    <span class="logo-text">daily health tips</span>
+                    <span class="logo-tagline">Ancient Wisdom • Modern Wellness</span>
+                </div>
+            </a>
+            
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="meal-plans.html" class="nav-link">Meal Plans</a></li>
+                <li><a href="fitness.html" class="nav-link">Fitness</a></li>
+                <li><a href="sleep.html" class="nav-link">Sleep Health</a></li>
+                <li><a href="tools.html" class="nav-link">Health Tools</a></li>
+                <li><a href="articles.html" class="nav-link">Daily Tips</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="hero" style="min-height: 40vh; padding-top: 100px;">
+        <div class="container">
+            <div class="hero-content scroll-unfold" style="max-width: 100%; text-align: center;">
+                <span class="hero-badge">CONTACT</span>
+                <h1>Get In Touch</h1>
+                <p>Have questions, feedback, or want to collaborate? We'd love to hear from you.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form scroll-unfold">
+                    <h2 style="margin-bottom: 30px;">Send Us a Message</h2>
+                    
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="contact-name">Your Name *</label>
+                            <input type="text" id="contact-name" name="name" required placeholder="Enter your full name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contact-email">Email Address *</label>
+                            <input type="email" id="contact-email" name="email" required placeholder="Enter your email address">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contact-subject">Subject *</label>
+                            <select id="contact-subject" name="subject" required>
+                                <option value="">Select a topic</option>
+                                <option value="General Inquiry">General Inquiry</option>
+                                <option value="Feedback">Feedback</option>
+                                <option value="Content Request">Content Request</option>
+                                <option value="Collaboration">Collaboration</option>
+                                <option value="Technical Support">Technical Support</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contact-message">Your Message *</label>
+                            <textarea id="contact-message" name="message" required placeholder="Tell us how we can help you..."></textarea>
+                        </div>
+                        
+                        <a href="#" class="submit-btn" id="send-email-btn">Send Message</a>
+                    </form>
+                    
+                    <div class="direct-email-section">
+                        <h3>Or email us directly:</h3>
+                        <a href="mailto:tuliacardello@gmail.com" class="direct-email-link">📧 tuliacardello@gmail.com</a>
+                    </div>
+                </div>
+                
+                <!-- Contact Information -->
+                <div class="contact-info scroll-unfold">
+                    <h2 style="margin-bottom: 30px;">Contact Information</h2>
+                    
+                    <div class="contact-item">
+                        <h3>
+                            <span class="contact-item-icon">✉️</span>
+                            Email
+                        </h3>
+                        <p>tuliacardello@gmail.com<br>For general inquiries and support</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <h3>
+                            <span class="contact-item-icon">⏰</span>
+                            Response Time
+                        </h3>
+                        <p>We aim to respond within 24-48 hours during business days. Please be patient during busy periods.</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <h3>
+                            <span class="contact-item-icon">💡</span>
+                            Content Suggestions
+                        </h3>
+                        <p>Have a topic you'd like us to cover? We welcome suggestions for new exercises, meal plans, or wellness guides.</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <h3>
+                            <span class="contact-item-icon">🤝</span>
+                            Collaboration
+                        </h3>
+                        <p>Interested in partnering with us? We're open to working with wellness practitioners, content creators, and health organizations.</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <h3>
+                            <span class="contact-item-icon">⚠️</span>
+                            Important Notice
+                        </h3>
+                        <p style="color: var(--ink-gray); font-size: 0.9rem;">For medical emergencies or urgent health concerns, please contact your local emergency services or healthcare provider. We cannot provide medical advice.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section" style="background: var(--wood-beige-light);">
+        <div class="container">
+            <div class="section-header scroll-unfold">
+                <div class="seal-heading">FAQ</div>
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div class="feature-card scroll-unfold" style="margin-bottom: 20px; text-align: left;">
+                    <h3 style="margin-bottom: 10px;">Can you provide medical advice?</h3>
+                    <p>No. We are not healthcare providers and cannot diagnose, treat, or prescribe medical treatments. Our content is for informational purposes only. Always consult a qualified healthcare professional for medical concerns.</p>
+                </div>
+                
+                <div class="feature-card scroll-unfold" style="margin-bottom: 20px; text-align: left;">
+                    <h3 style="margin-bottom: 10px;">How can I request new content?</h3>
+                    <p>Use the contact form above and select "Content Request" as the subject. Tell us what topics, exercises, or meal plans you'd like us to cover. We review all suggestions and prioritize based on audience interest.</p>
+                </div>
+                
+                <div class="feature-card scroll-unfold" style="margin-bottom: 20px; text-align: left;">
+                    <h3 style="margin-bottom: 10px;">Do you offer personal consultations?</h3>
+                    <p>We currently do not offer personal consultations or coaching. Our content is designed to be self-guided. For personalized guidance, we recommend finding a licensed TCM practitioner in your area.</p>
+                </div>
+                
+                <div class="feature-card scroll-unfold" style="text-align: left;">
+                    <h3 style="margin-bottom: 10px;">Can I republish your content?</h3>
+                    <p>Our content is protected by copyright. You may share links to our articles, but republishing content without permission is not allowed. For licensing inquiries, please contact us.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon"></div>
+                        <div>
+                            <span class="logo-text">daily health tips</span>
+                        </div>
+                    </a>
+                    <p>Bridging ancient Eastern wellness wisdom with modern health science. Your trusted source for daily health tips rooted in traditional Chinese medicine.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="meal-plans.html">Meal Plans</a></li>
+                        <li><a href="fitness.html">Fitness</a></li>
+                        <li><a href="sleep.html">Sleep Health</a></li>
+                        <li><a href="tools.html">Health Tools</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Exercises</h4>
+                    <ul class="footer-links">
+                        <li><a href="fitness.html#tai-chi">Tai Chi</a></li>
+                        <li><a href="fitness.html#baduanjin">Baduanjin</a></li>
+                        <li><a href="fitness.html#daoyin">Daoyin</a></li>
+                        <li><a href="fitness.html#qigong">Morning Qigong</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="footer-copyright">&copy; <span class="copyright-year">2026</span> Daily Health Tips. All rights reserved.</p>
+                <p class="footer-disclaimer">This website is for informational purposes only and does not constitute professional medical advice. Always consult with a qualified healthcare provider before starting any new health regimen.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    
+    <script>
+        // Generate mailto link with form data
+        document.getElementById('send-email-btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('contact-name').value.trim();
+            const email = document.getElementById('contact-email').value.trim();
+            const subject = document.getElementById('contact-subject').value;
+            const message = document.getElementById('contact-message').value.trim();
+            
+            // Validate form
+            if (!name || !email || !subject || !message) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+            
+            // Validate email format
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert('Please enter a valid email address.');
+                return;
+            }
+            
+            // Create mailto link
+            const toEmail = 'tuliacardello@gmail.com';
+            const emailSubject = encodeURIComponent('[' + subject + '] Message from ' + name);
+            const emailBody = encodeURIComponent(
+                'Name: ' + name + '\n' +
+                'Email: ' + email + '\n' +
+                'Subject: ' + subject + '\n\n' +
+                'Message:\n' + message
+            );
+            
+            const mailtoLink = 'mailto:' + toEmail + '?subject=' + emailSubject + '&body=' + emailBody;
+            
+            // Open email client
+            window.location.href = mailtoLink;
+        });
+    </script>
+</body>
+</html>

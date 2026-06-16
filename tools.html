@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Online Health Tools - BMI Calculator, Daily Calorie Calculator, Water Intake Calculator, Sleep Cycle Calculator, and Macro Nutrient Calculator. Free health assessment tools.">
+    <meta name="keywords" content="health tools, BMI calculator, calorie calculator, water intake calculator, sleep calculator, macro calculator, online health assessment">
+    <meta name="author" content="daily health tips">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Online Health Tools - daily health tips">
+    <meta property="og:description" content="Calculate your BMI, daily calorie needs, water intake, and optimal sleep schedule with our easy-to-use health calculators.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://easternhealthtips.com/tools.html">
+    
+    <title>Online Health Tools - daily health tips</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <style>
+        /* Calculator-specific styles */
+        .calculator-section {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .calculator-card {
+            background: var(--cream-white);
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--wood-beige);
+        }
+        .calculator-card h3 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: var(--indigo-blue);
+        }
+        .result-box {
+            margin-top: 25px;
+            padding: 20px;
+            background: var(--wood-beige-light);
+            border-radius: 12px;
+            text-align: center;
+            display: none;
+        }
+        .result-value {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--cinnabar-red);
+            margin: 10px 0;
+        }
+        .result-label {
+            font-size: 0.9rem;
+            color: var(--ink-gray);
+        }
+        .result-category {
+            display: inline-block;
+            padding: 8px 20px;
+            border-radius: 20px;
+            margin-top: 10px;
+            font-weight: 600;
+            color: white;
+        }
+        .result-info {
+            margin-top: 15px;
+            font-size: 0.9rem;
+            color: var(--ink-gray);
+            line-height: 1.6;
+        }
+        .radio-group {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .radio-option {
+            flex: 1;
+        }
+        .radio-option input {
+            display: none;
+        }
+        .radio-option label {
+            display: block;
+            padding: 12px;
+            text-align: center;
+            border: 2px solid var(--wood-beige-dark);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        .radio-option input:checked + label {
+            border-color: var(--cinnabar-red);
+            background: var(--cinnabar-red);
+            color: white;
+        }
+        .macro-chart {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .macro-item {
+            flex: 1;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            color: white;
+        }
+        .macro-item.protein { background: #e74c3c; }
+        .macro-item.carbs { background: #3498db; }
+        .macro-item.fat { background: #f39c12; }
+        .macro-value {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        .macro-label {
+            font-size: 0.75rem;
+            opacity: 0.9;
+        }
+        .sleep-result-card {
+            padding: 20px;
+            background: linear-gradient(135deg, var(--indigo-blue) 0%, var(--indigo-blue-dark) 100%);
+            border-radius: 12px;
+            color: white;
+            text-align: center;
+            margin-top: 15px;
+        }
+        .sleep-time-value {
+            font-size: 2rem;
+            font-weight: 700;
+            margin: 10px 0;
+        }
+        .sleep-cycles {
+            font-size: 0.85rem;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon"></div>
+                <div>
+                    <span class="logo-text">daily health tips</span>
+                    <span class="logo-tagline">Ancient Wisdom • Modern Wellness</span>
+                </div>
+            </a>
+            
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="meal-plans.html" class="nav-link">Meal Plans</a></li>
+                <li><a href="fitness.html" class="nav-link">Fitness</a></li>
+                <li><a href="sleep.html" class="nav-link">Sleep Health</a></li>
+                <li><a href="tools.html" class="nav-link active">Health Tools</a></li>
+                <li><a href="articles.html" class="nav-link">Daily Tips</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="hero" style="min-height: 50vh; padding-top: 100px; background: linear-gradient(135deg, var(--jade-green) 0%, #4a7c4a 100%);">
+        <div class="container">
+            <div class="hero-content scroll-unfold" style="max-width: 100%; text-align: center;">
+                <span class="hero-badge">HEALTH TOOLS</span>
+                <h1 style="color: var(--cream-white);">Online Health Calculators</h1>
+                <p style="color: var(--wood-beige);">Take control of your health with our free, easy-to-use calculators. Get personalized insights for your BMI, daily calorie needs, hydration, sleep, and nutrition.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ad Slot -->
+    <div class="container">
+        <div class="ad-slot ad-slot-incontent" id="ad-tools-top">
+            Advertisement Space (728x90)
+        </div>
+    </div>
+
+    <!-- Calculator Tabs -->
+    <section class="section">
+        <div class="container">
+            <div class="tab-nav scroll-unfold">
+                <button class="tab-btn active" data-tab="bmi-calc">BMI Calculator</button>
+                <button class="tab-btn" data-tab="calorie-calc">Calorie Calculator</button>
+                <button class="tab-btn" data-tab="water-calc">Water Intake</button>
+                <button class="tab-btn" data-tab="sleep-calc">Sleep Cycle</button>
+                <button class="tab-btn" data-tab="macro-calc">Macro Nutrients</button>
+            </div>
+            
+            <!-- BMI Calculator -->
+            <div class="tab-content active" id="bmi-calc">
+                <div class="calculator-section">
+                    <div class="calculator-card">
+                        <h3>BMI Calculator</h3>
+                        <p class="text-center" style="margin-bottom: 20px;">Calculate your Body Mass Index to assess if your weight is in a healthy range.</p>
+                        
+                        <div class="input-group">
+                            <label style="font-weight: 600; margin-bottom: 8px; display: block;">Weight (kg)</label>
+                            <input type="number" id="bmi-weight" placeholder="Enter your weight" step="0.1" style="width: 100%; padding: 12px; border: 2px solid var(--wood-beige-dark); border-radius: 8px; font-size: 1rem;">
+                        </div>
+                        
+                        <div class="input-group">
+                            <label style="font-weight: 600; margin-bottom: 8px; display: block;">Height (cm)</label>
+                            <input type="number" id="bmi-height" placeholder="Enter your height" step="0.1" style="width: 100%; padding: 12px; border: 2px solid var(--wood-beige-dark); border-radius: 8px; font-size: 1rem;">
+                        </div>
+                        
+                        <button class="btn btn-primary" style="width: 100%; margin-top: 15px;" onclick="calculateBMI()">Calculate BMI</button>
+                        
+                        <div class="result-box" id="bmi-result">
+                            <div class="result-label">Your BMI</div>
+                            <div class="result-value" id="bmi-value">--</div>
+                            <div class="result-category" id="bmi-category">--</div>
+                            <div class="result-info" id="bmi-info"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Calorie Calculator -->
+            <div class="tab-content" id="calorie-calc">
+                <div class="calculator-section">
+                    <div class="calculator-card">
+                        <h3>Daily Calorie Needs</h3>
+                        <p class="text-center" style="margin-bottom: 20px;">Calculate your daily calorie requirements based on your activity level.</p>
+                        
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" name="calorie-gender" id="calorie-male" value="male" checked>
+                                <label for="calorie-male">Male</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" name="calorie-gender" id="calorie-female" value="female">
+                                <label for="calorie-female">Female</label>
+                            </div>
+                        </div>
+                        
+                        <div class="input-group">
+                            <label style="font-weight: 600; margin-bottom: 8px; display: block;">Age</label>
+                            <input type="number" id="calorie-age" placeholder="Enter your age" style="width: 100%; padding: 12px; border: 2px solid var(--wood-beige-dark); border-radius: 8px; font-size: 1rem;">
+                        </div>
+                        
+                        <div class="input-group">
+                            <label style="font-weight: 600; margin-bottom: 8px; display: block;">Weight (kg)</label>
+                            <input type="number" id="calorie-weight" placeholder="Enter your weight" step="0.1" style="width: 100%; padding: 12px; border: 2px solid var(--wood-beige-dark); border-radius: 8px; font-size: 1rem;">
+                        </div>
+                        
+                        <div class="input-group">
+                            <label style="font-weight: 600; margin-bottom: 8px; display: block;">Height (cm)</label>
+                            <input type="number" id="calorie-height" placeholder="Enter your height" step="0.1" style="width: 100%; padding: 12px; border: 2px solid var(--wood-beige-dark); border-radius: 8px; font-size: 1rem;">
+                        </div>
+                        
+                        <div class="input-group">
+                            <label style="font-weight: 600; margin-bottom: 8px; display: block;">Activity Level</label>
+                            <select id="calorie-activity" style="width: 100%; padding: 12px; border: 2px solid var(--wood-beige-dark); border-radius: 8px; font-size: 1rem;">
+                                <option value="1.2">Sedentary (little or no exercise)</option>
+                                <option value="1.375">Light (exercise 1-3 days/week)</option>
+                                <option value="1.55">Moderate (exercise 3-5 days/week)</option>
+                                <option value="1.725">Active (exercise 6-7 days/week)</option>
+                                <option value="1.9">Very Active (intense exercise)</option>
+                            </select>
+                        </div>
+                        
+                        <button class="btn btn-primary" style="width: 100%; margin-top: 15px;" onclick="calculateCalorie()">Calculate Calories</button>
+                        
+                        <div class="result-box" id="calorie-result">
+                            <div class="result-label">Daily Calorie Needs</div>
+                            <div class="result-value" id="calorie-value">--</div>
+                            <div class="result-label">kcal/day</div>
+                            <div class="result-info" id="calorie-info"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Water Calculator -->
+            <div class="tab-content" id="water-calc">
+                <div class="calculator-section">
+                    <div class="calculator-card">
+                        <h3>Daily Water Intake</h3>
+                        <p class="text-center" style="margin-bottom: 20px;">Calculate your recommended daily water intake based on your weight and activity level.</p>
+                        
+                        <div class="input-group">
+                            <label style="font-weight: 600; margin-bottom: 8px; display: block;">Weight (kg)</label>
+                            <input type="number" id="water-weight" placeholder="Enter your weight" step="0.1" style="width: 100%; padding: 12px; border: 2px solid var(--wood-beige-dark); border-radius: 8px; font-size: 1rem;">
+                        </div>
+                        
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" name="water-activity" id="water-low" value="low" checked>
+                                <label for="water-low">Light Activity</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" name="water-activity" id="water-medium" value="medium">
+                                <label for="water-medium">Moderate</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" name="water-activity" id="water-high" value="high">
+                                <label for="water-high">Intense</label>
+                            </div>
+                        </div>
+                        
+                        <button class="btn btn-primary" style="width: 100%; margin-top: 15px;" onclick="calculateWater()">Calculate Water Intake</button>
+                        
+                        <div class="result-box" id="water-result">
+                            <div class="result-label">Recommended Daily Water</div>
+                            <div class="result-value" id="water-value">--</div>
+                            <div class="result-label">liters/day</div>
+                            <div class="result-info" id="water-info"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Sleep Calculator -->
+            <div class="tab-content" id="sleep-calc">
+                <div class="calculator-section">
+                    <div class="calculator-card">
+                        <h3>Sleep Cycle Calculator</h3>
+                        <p class="text-center" style="margin-bottom: 20px;">Find the best time to go to bed or wake up based on 90-minute sleep cycles.</p>
+                        
+                        <div class="input-group">
+                            <label style="font-weight: 600; margin-bottom: 8px; display: block;">I want to wake up at:</label>
+                            <input type="time" id="sleep-wakeup" value="07:00" style="width: 100%; padding: 12px; border: 2px solid var(--wood-beige-dark); border-radius: 8px; font-size: 1rem;">
+                        </div>
+                        
+                        <div class="input-group">
+                            <label style="font-weight: 600; margin-bottom: 8px; display: block;">Or I want to go to bed at:</label>
+                            <input type="time" id="sleep-bedtime" value="23:00" style="width: 100%; padding: 12px; border: 2px solid var(--wood-beige-dark); border-radius: 8px; font-size: 1rem;">
+                        </div>
+                        
+                        <button class="btn btn-primary" style="width: 100%; margin-top: 15px;" onclick="calculateSleep()">Calculate Best Times</button>
+                        
+                        <div class="result-box" id="sleep-result">
+                            <div id="sleep-times"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Macro Calculator -->
+            <div class="tab-content" id="macro-calc">
+                <div class="calculator-section">
+                    <div class="calculator-card">
+                        <h3>Macro Nutrient Calculator</h3>
+                        <p class="text-center" style="margin-bottom: 20px;">Calculate your daily protein, carbohydrate, and fat needs based on your calorie goal.</p>
+                        
+                        <div class="input-group">
+                            <label style="font-weight: 600; margin-bottom: 8px; display: block;">Daily Calorie Target</label>
+                            <input type="number" id="macro-calories" placeholder="Enter calories" value="2000" style="width: 100%; padding: 12px; border: 2px solid var(--wood-beige-dark); border-radius: 8px; font-size: 1rem;">
+                        </div>
+                        
+                        <div class="input-group">
+                            <label style="font-weight: 600; margin-bottom: 8px; display: block;">Diet Type</label>
+                            <select id="macro-type" onchange="updateMacroRatios()" style="width: 100%; padding: 12px; border: 2px solid var(--wood-beige-dark); border-radius: 8px; font-size: 1rem;">
+                                <option value="balanced">Balanced</option>
+                                <option value="lowcarb">Low Carb</option>
+                                <option value="highprotein">High Protein</option>
+                                <option value="keto">Keto</option>
+                            </select>
+                        </div>
+                        
+                        <div class="input-group">
+                            <label style="font-weight: 600; margin-bottom: 8px; display: block;">Protein: <span id="protein-percent">30</span>%</label>
+                            <input type="range" id="macro-protein" min="10" max="50" value="30" oninput="updateMacroDisplay()" style="width: 100%;">
+                        </div>
+                        
+                        <div class="input-group">
+                            <label style="font-weight: 600; margin-bottom: 8px; display: block;">Carbohydrates: <span id="carbs-percent">40</span>%</label>
+                            <input type="range" id="macro-carbs" min="10" max="60" value="40" oninput="updateMacroDisplay()" style="width: 100%;">
+                        </div>
+                        
+                        <div class="input-group">
+                            <label style="font-weight: 600; margin-bottom: 8px; display: block;">Fat: <span id="fat-percent">30</span>%</label>
+                            <input type="range" id="macro-fat" min="10" max="50" value="30" oninput="updateMacroDisplay()" style="width: 100%;">
+                        </div>
+                        
+                        <button class="btn btn-primary" style="width: 100%; margin-top: 15px;" onclick="calculateMacro()">Calculate Macros</button>
+                        
+                        <div class="result-box" id="macro-result">
+                            <div class="result-label">Daily Macro Needs</div>
+                            <div class="macro-chart">
+                                <div class="macro-item protein">
+                                    <div class="macro-value" id="protein-value">--</div>
+                                    <div class="macro-label">Protein (g)</div>
+                                </div>
+                                <div class="macro-item carbs">
+                                    <div class="macro-value" id="carbs-value">--</div>
+                                    <div class="macro-label">Carbs (g)</div>
+                                </div>
+                                <div class="macro-item fat">
+                                    <div class="macro-value" id="fat-value">--</div>
+                                    <div class="macro-label">Fat (g)</div>
+                                </div>
+                            </div>
+                            <div class="result-info" id="macro-info"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ad Slot -->
+    <div class="container">
+        <div class="ad-slot ad-slot-incontent" id="ad-tools-mid">
+            Advertisement Space (728x90)
+        </div>
+    </div>
+
+    <!-- Health Tips -->
+    <section class="section" style="background: var(--wood-beige-light);">
+        <div class="container">
+            <div class="section-header scroll-unfold">
+                <div class="seal-heading">HEALTH INSIGHTS</div>
+                <h2>Understanding Your Results</h2>
+                <p>Learn what these health metrics mean and how to use them effectively.</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card scroll-unfold">
+                    <div class="feature-icon">📊</div>
+                    <h3>About BMI</h3>
+                    <p>BMI is a useful screening tool, but it doesn't account for muscle mass, bone density, or body composition. Athletes may have high BMI but low body fat.</p>
+                </div>
+                
+                <div class="feature-card scroll-unfold">
+                    <div class="feature-icon">🔥</div>
+                    <h3>Calorie Needs</h3>
+                    <p>Your daily calorie needs depend on age, gender, weight, height, and activity level. These calculations provide estimates; individual needs may vary.</p>
+                </div>
+                
+                <div class="feature-card scroll-unfold">
+                    <div class="feature-icon">💧</div>
+                    <h3>Hydration</h3>
+                    <p>Water needs vary based on activity, climate, and individual factors. These recommendations are general guidelines; listen to your body's thirst signals.</p>
+                </div>
+                
+                <div class="feature-card scroll-unfold">
+                    <div class="feature-icon">😴</div>
+                    <h3>Sleep Cycles</h3>
+                    <p>Most adults need 7-9 hours of sleep. The calculator helps you wake at the end of a sleep cycle when you'll feel most refreshed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ad Slot -->
+    <div class="container">
+        <div class="ad-slot ad-slot-incontent" id="ad-tools-bottom">
+            Advertisement Space (728x90)
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon"></div>
+                        <div>
+                            <span class="logo-text">daily health tips</span>
+                        </div>
+                    </a>
+                    <p>Bridging ancient Eastern wellness wisdom with modern health science. Your trusted source for daily health tips rooted in traditional Chinese medicine.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="meal-plans.html">Meal Plans</a></li>
+                        <li><a href="fitness.html">Fitness</a></li>
+                        <li><a href="sleep.html">Sleep Health</a></li>
+                        <li><a href="tools.html">Health Tools</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Exercises</h4>
+                    <ul class="footer-links">
+                        <li><a href="fitness.html#tai-chi">Tai Chi</a></li>
+                        <li><a href="fitness.html#baduanjin">Baduanjin</a></li>
+                        <li><a href="fitness.html#daoyin">Daoyin</a></li>
+                        <li><a href="fitness.html#qigong">Morning Qigong</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="footer-copyright">&copy; <span class="copyright-year">2026</span> Daily Health Tips. All rights reserved.</p>
+                <p class="footer-disclaimer">This website is for informational purposes only and does not constitute professional medical advice. Always consult with a qualified healthcare provider before starting any new health regimen.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+</body>
+</html>
