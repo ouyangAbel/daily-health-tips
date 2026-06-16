@@ -247,12 +247,12 @@ const articles = [
     },
     {
         id: 28,
-        slug: "meal-plan-sunday",
-        title: "Sunday Meal Plan: Restorative Day",
-        date: "2026-06-22",
-        category: "Weekly Meal Plan",
-        icon: "🧘",
-        excerpt: "Light restorative meals with fruit yogurt, vegetable broth, and steamed vegetables."
+        slug: "acupressure-headache-relief",
+        title: "Acupressure for Headache Relief: 5 Points That Work",
+        date: "2026-06-16",
+        category: "Daily Wellness",
+        icon: "💆",
+        excerpt: "Stop reaching for painkillers. These five acupressure points can relieve headaches in minutes."
     }
 ];
 
