@@ -131,23 +131,44 @@
             <div class="hero-content scroll-unfold" style="max-width: 100%; text-align: center;">
                 <span class="hero-badge">DAILY TIPS</span>
                 <h1>Daily Health Tips</h1>
-                <p>Fresh Eastern wellness wisdom delivered daily. Simple practices for a healthier, more balanced life.</p>
+                <p>Browse our collection of daily health tips rooted in traditional Chinese wellness practices.</p>
             </div>
         </div>
     </section>
 
-    <!-- Articles List -->
+    <!-- Daily Health Tips -->
     <section class="section">
         <div class="container" style="max-width: 900px;">
             <div class="section-header scroll-unfold">
-                <div class="seal-heading">WISDOM LIBRARY</div>
-                <h2>All Articles</h2>
-                <p>Browse our collection of daily health tips rooted in traditional Chinese wellness practices.</p>
+                <div class="seal-heading">DAILY TIPS</div>
+                <h2>Daily Health Tips</h2>
+                <p>Simple practices and wisdom for a healthier, more balanced life.</p>
             </div>
-            
-            <div id="articles-container">
-                <!-- Articles will be loaded here by JavaScript -->
+            <div id="daily-tips-list"></div>
+        </div>
+    </section>
+
+    <!-- Fitness & Exercise -->
+    <section class="section" style="background: var(--wood-beige-light);">
+        <div class="container" style="max-width: 900px;">
+            <div class="section-header scroll-unfold">
+                <div class="seal-heading">FITNESS</div>
+                <h2>Fitness & Exercise</h2>
+                <p>Ancient Chinese movement arts for strength, flexibility, and inner peace.</p>
             </div>
+            <div id="fitness-list"></div>
+        </div>
+    </section>
+
+    <!-- Weekly Meal Plans -->
+    <section class="section">
+        <div class="container" style="max-width: 900px;">
+            <div class="section-header scroll-unfold">
+                <div class="seal-heading">NUTRITION</div>
+                <h2>Weekly Meal Plans</h2>
+                <p>Balanced Eastern-inspired meal plans updated weekly with detailed recipes.</p>
+            </div>
+            <div id="meal-list"></div>
         </div>
     </section>
 
@@ -207,30 +228,25 @@
     <script src="js/articles.js"></script>
     
     <script>
-        // Format date
         function formatDate(dateString) {
             const options = { year: 'numeric', month: 'long', day: 'numeric' };
             return new Date(dateString).toLocaleDateString('en-US', options);
         }
-        
-        // Render articles
-        function renderArticles() {
-            const container = document.getElementById('articles-container');
-            
-            if (!articles || articles.length === 0) {
-                container.innerHTML = '<p style="text-align: center; color: var(--ink-gray);">No articles yet. Check back soon!</p>';
-                return;
-            }
-            
-            // Sort by date (newest first)
-            const sortedArticles = [...articles].sort((a, b) => new Date(b.date) - new Date(a.date));
-            
-            container.innerHTML = sortedArticles.map((article, index) => `
-                <article class="article-card scroll-unfold" style="animation-delay: ${index * 0.1}s">
+
+        const fitnessCategories = ['Fitness & Qigong', 'Baduanjin', 'Tai Chi', 'Daoyin', 'Qigong', 'Bedtime Practice'];
+        const mealCategories = ['Weekly Meal Plan'];
+
+        function isDailyTip(a) {
+            return !fitnessCategories.includes(a.category) && !mealCategories.includes(a.category);
+        }
+        function isFitness(a) { return fitnessCategories.includes(a.category); }
+        function isMeal(a) { return mealCategories.includes(a.category); }
+
+        function renderCard(article) {
+            return `
+                <article class="article-card scroll-unfold">
                     <div class="article-card-inner">
-                        <div class="article-icon-section">
-                            ${article.icon}
-                        </div>
+                        <div class="article-icon-section">${article.icon}</div>
                         <div class="article-content-section">
                             <div class="article-meta">
                                 <span class="article-date">📅 ${formatDate(article.date)}</span>
@@ -238,22 +254,27 @@
                             </div>
                             <h3 class="article-title">${article.title}</h3>
                             <p class="article-excerpt">${article.excerpt}</p>
-                            <a href="articles/${article.slug}.html" class="article-read-more">
-                                Read Full Tip →
-                            </a>
+                            <a href="articles/${article.slug}.html" class="article-read-more">Read Full Tip →</a>
                         </div>
                     </div>
-                </article>
-            `).join('');
-            
-            // Re-initialize scroll animations
+                </article>`;
+        }
+
+        function renderSection(containerId, filtered) {
+            const el = document.getElementById(containerId);
+            if (!filtered.length) { el.innerHTML = '<p style="text-align:center;color:var(--ink-gray);">Coming soon!</p>'; return; }
+            el.innerHTML = filtered.map(a => renderCard(a)).join('');
+        }
+
+        function renderArticles() {
+            const sorted = [...articles].sort((a, b) => new Date(b.date) - new Date(a.date));
+            renderSection('daily-tips-list', sorted.filter(isDailyTip));
+            renderSection('fitness-list', sorted.filter(isFitness));
+            renderSection('meal-list', sorted.filter(isMeal));
             initScrollAnimations();
         }
-        
-        // Initialize
-        document.addEventListener('DOMContentLoaded', function() {
-            renderArticles();
-        });
+
+        document.addEventListener('DOMContentLoaded', renderArticles);
     </script>
 </body>
 </html>
