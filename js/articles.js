@@ -195,7 +195,7 @@ const articles = [
         id: 22,
         slug: "meal-plan-monday",
         title: "Monday Meal Plan: Grounding Day",
-        date: "2026-06-16",
+        date: "2026-06-15",
         category: "Weekly Meal Plan",
         icon: "🌅",
         excerpt: "Spleen & stomach nourishing meals with ginger congee, steamed vegetables, and miso soup."
@@ -213,7 +213,7 @@ const articles = [
         id: 24,
         slug: "meal-plan-wednesday",
         title: "Wednesday Meal Plan: Cleansing Day",
-        date: "2026-06-18",
+        date: "2026-06-17",
         category: "Weekly Meal Plan",
         icon: "🍃",
         excerpt: "Liver detox meals with green smoothie, bitter greens salad, and steamed fish."
@@ -222,7 +222,7 @@ const articles = [
         id: 25,
         slug: "meal-plan-thursday",
         title: "Thursday Meal Plan: Energizing Day",
-        date: "2026-06-19",
+        date: "2026-06-18",
         category: "Weekly Meal Plan",
         icon: "☀️",
         excerpt: "Heart-nourishing meals with berry oatmeal, grilled vegetable wrap, and tomato soup."
@@ -231,7 +231,7 @@ const articles = [
         id: 26,
         slug: "meal-plan-friday",
         title: "Friday Meal Plan: Harmonizing Day",
-        date: "2026-06-20",
+        date: "2026-06-19",
         category: "Weekly Meal Plan",
         icon: "🌸",
         excerpt: "Balanced five-flavor meals with avocado toast, grain bowl, and tofu stir-fry."
@@ -240,7 +240,7 @@ const articles = [
         id: 27,
         slug: "meal-plan-saturday",
         title: "Saturday Meal Plan: Warming Day",
-        date: "2026-06-21",
+        date: "2026-06-20",
         category: "Weekly Meal Plan",
         icon: "🍂",
         excerpt: "Yang-supporting meals with cinnamon oatmeal, root vegetable stew, and ginger noodle soup."
