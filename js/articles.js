@@ -253,6 +253,15 @@ const articles = [
         category: "Daily Wellness",
         icon: "💆",
         excerpt: "Stop reaching for painkillers. These five acupressure points can relieve headaches in minutes."
+    },
+    {
+        id: 29,
+        slug: "eye-health-traditional-methods",
+        title: "Eye Health: Traditional Chinese Methods to Protect Your Vision",
+        date: "2026-06-17",
+        category: "Daily Wellness",
+        icon: "👁️",
+        excerpt: "Discover ancient Chinese techniques to relieve eye strain and protect your vision in the digital age."
     }
 ];
 
