@@ -262,6 +262,15 @@ const articles = [
         category: "Daily Wellness",
         icon: "👁️",
         excerpt: "Discover ancient Chinese techniques to relieve eye strain and protect your vision in the digital age."
+    },
+    {
+        id: 30,
+        slug: "boost-immune-system-naturally",
+        title: "How to Boost Your Immune System Naturally: Ancient Eastern Wisdom That Works",
+        date: "2026-06-18",
+        category: "Daily Wellness",
+        icon: "🛡️",
+        excerpt: "Discover time-tested Traditional Chinese Medicine strategies to strengthen your immune system naturally — from immune-boosting foods to acupressure and qigong."
     }
 ];
 
