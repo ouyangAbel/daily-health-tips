@@ -1085,7 +1085,7 @@ img {
 .social-share {
     text-align: center;
     padding: 30px 0;
-    margin: 30px 0;
+    margin: 30px 0 50px 0;
     border-top: 1px solid var(--wood-beige);
     border-bottom: 1px solid var(--wood-beige);
 }
