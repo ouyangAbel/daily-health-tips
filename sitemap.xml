@@ -53,6 +53,12 @@
 
   <!-- Articles - Daily Health Tips -->
   <url>
+    <loc>https://ZenHealthDay.com/articles/gua-sha-guide.html</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://ZenHealthDay.com/articles/boost-immune-system-naturally.html</loc>
     <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>

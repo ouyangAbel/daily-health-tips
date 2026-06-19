@@ -271,6 +271,15 @@ const articles = [
         category: "Daily Wellness",
         icon: "🛡️",
         excerpt: "Discover time-tested Traditional Chinese Medicine strategies to strengthen your immune system naturally — from immune-boosting foods to acupressure and qigong."
+    },
+    {
+        id: 31,
+        slug: "gua-sha-guide",
+        title: "Gua Sha: Ancient Chinese Scraping Technique for Pain Relief",
+        date: "2026-06-19",
+        category: "Daily Wellness",
+        icon: "🪨",
+        excerpt: "Learn how to do Gua Sha at home for pain relief and better circulation. This ancient Chinese scraping technique uses simple tools to release muscle tension, reduce inflammation, and promote healing."
     }
 ];
 
