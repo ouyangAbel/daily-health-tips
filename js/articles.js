@@ -279,7 +279,9 @@ const articles = [
         date: "2026-06-19",
         category: "Daily Wellness",
         icon: "🪨",
-        excerpt: "Learn how to do Gua Sha at home for pain relief and better circulation. This ancient Chinese scraping technique uses simple tools to release muscle tension, reduce inflammation, and promote healing."
+        excerpt: "Learn how to do Gua Sha at home for pain relief and better circulation. This ancient Chinese scraping technique uses simple tools to release muscle tension, reduce inflammation, and promote healing.",
+        quote: "When the qi and blood flow smoothly, the body is at peace. When they stagnate, disease takes root.",
+        quoteAuthor: "Traditional Chinese Medicine principle"
     }
 ];
 

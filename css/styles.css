@@ -1078,3 +1078,60 @@ img {
 .article-body {
     flex: 1;
 }
+
+/* ========================================
+   Social Sharing Buttons
+   ======================================== */
+.social-share {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    padding: 30px 0;
+    margin: 30px 0;
+    border-top: 1px solid var(--wood-beige);
+    border-bottom: 1px solid var(--wood-beige);
+}
+
+.social-share-title {
+    width: 100%;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--ink-gray);
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.social-share-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    color: white;
+}
+
+.social-share-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.social-share-btn.facebook { background: #1877F2; }
+.social-share-btn.twitter { background: #000000; }
+.social-share-btn.pinterest { background: #E60023; }
+.social-share-btn.whatsapp { background: #25D366; }
+.social-share-btn.email { background: #777777; }
+
+@media (max-width: 480px) {
+    .social-share {
+        gap: 10px;
+    }
+    .social-share-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1.1rem;
+    }
+}
