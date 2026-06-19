@@ -1098,9 +1098,10 @@ img {
 }
 
 .social-share-buttons {
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     gap: 12px;
+    flex-wrap: nowrap;
 }
 
 .social-share-btn {
