@@ -282,6 +282,17 @@ const articles = [
         excerpt: "Learn how to do Gua Sha at home for pain relief and better circulation. This ancient Chinese scraping technique uses simple tools to release muscle tension, reduce inflammation, and promote healing.",
         quote: "When the qi and blood flow smoothly, the body is at peace. When they stagnate, disease takes root.",
         quoteAuthor: "Traditional Chinese Medicine principle"
+    },
+    {
+        id: 32,
+        slug: "ear-acupressure-guide",
+        title: "Ear Acupressure: 8 Key Points for Natural Pain Relief and Wellness",
+        date: "2026-06-21",
+        category: "Daily Wellness",
+        icon: "👂",
+        excerpt: "Discover ear acupressure (Auriculotherapy), a powerful TCM technique for natural pain relief, stress reduction, and overall wellness. Learn 8 key ear points you can press at home.",
+        quote: "The ear is a window to the entire body. When you heal the ear, you heal the whole.",
+        quoteAuthor: "Traditional Chinese Medicine principle"
     }
 ];
 
