@@ -293,6 +293,17 @@ const articles = [
         excerpt: "Discover ear acupressure (Auriculotherapy), a powerful TCM technique for natural pain relief, stress reduction, and overall wellness. Learn 8 key ear points you can press at home.",
         quote: "The ear is a window to the entire body. When you heal the ear, you heal the whole.",
         quoteAuthor: "Traditional Chinese Medicine principle"
+    },
+    {
+        id: 33,
+        slug: "spring-health-diet-guide",
+        title: "Spring Health Diet: TCM Foods to Nourish Your Liver and Boost Energy",
+        date: "2026-06-21",
+        category: "Nutrition",
+        icon: "🌿",
+        excerpt: "Discover Traditional Chinese Medicine spring health diet principles. Learn what to eat in spring to nourish your liver, boost energy, and support seasonal wellness with recipes and food recommendations.",
+        quote: "In spring, eat green to nourish the liver, move your body to smooth the Qi, and wake early to embrace the rising energy of nature.",
+        quoteAuthor: "Traditional Chinese Medicine proverb"
     }
 ];
 

@@ -53,6 +53,12 @@
 
   <!-- Articles - Daily Health Tips -->
   <url>
+    <loc>https://ZenHealthDay.com/articles/spring-health-diet-guide.html</loc>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://ZenHealthDay.com/articles/ear-acupressure-guide.html</loc>
     <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
