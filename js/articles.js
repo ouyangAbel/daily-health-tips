@@ -304,6 +304,17 @@ const articles = [
         excerpt: "Discover Traditional Chinese Medicine spring health diet principles. Learn what to eat in spring to nourish your liver, boost energy, and support seasonal wellness with recipes and food recommendations.",
         quote: "In spring, eat green to nourish the liver, move your body to smooth the Qi, and wake early to embrace the rising energy of nature.",
         quoteAuthor: "Traditional Chinese Medicine proverb"
+    },
+    {
+        id: 34,
+        slug: "summer-dampness-removal",
+        title: "Summer Dampness Removal: TCM Foods and Tips to Detox Your Body",
+        date: "2026-06-21",
+        category: "Nutrition",
+        icon: "💧",
+        excerpt: "Learn how to remove dampness from your body in summer using Traditional Chinese Medicine. Discover foods, teas, and lifestyle practices that eliminate summer dampness and boost energy.",
+        quote: "To remove dampness, warm the spleen. To warm the spleen, eat warm, cook your food, and avoid the cold.",
+        quoteAuthor: "Traditional Chinese Medicine principle"
     }
 ];
 
