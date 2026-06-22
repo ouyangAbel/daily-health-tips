@@ -315,6 +315,17 @@ const articles = [
         excerpt: "Learn how to remove dampness from your body in summer using Traditional Chinese Medicine. Discover foods, teas, and lifestyle practices that eliminate summer dampness and boost energy.",
         quote: "To remove dampness, warm the spleen. To warm the spleen, eat warm, cook your food, and avoid the cold.",
         quoteAuthor: "Traditional Chinese Medicine principle"
+    },
+    {
+        id: 35,
+        slug: "postpartum-recovery-guide",
+        title: "Postpartum Recovery Guide: Traditional Chinese Zuo Yue Zi Wisdom for New Mothers",
+        date: "2026-06-22",
+        category: "Women's Health",
+        icon: "👶",
+        excerpt: "Traditional Chinese postpartum recovery guide (Zuo Yue Zi). Learn ancient wisdom for new mothers: warming foods, rest practices, herbal baths, and gentle exercises for postpartum healing.",
+        quote: "A month of careful recovery ensures a lifetime of health. A month of neglect creates a lifetime of illness.",
+        quoteAuthor: "Traditional Chinese Medicine proverb"
     }
 ];
 
