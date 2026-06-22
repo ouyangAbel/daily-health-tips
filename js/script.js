@@ -408,3 +408,25 @@ function validateNumberInput(value, min, max) {
     if (max !== undefined && num > max) return false;
     return true;
 }
+
+/* ========================================
+   Copy Article Link
+   ======================================== */
+function copyArticleLink(btn) {
+    const url = window.location.href;
+    if (navigator.clipboard) {
+        navigator.clipboard.writeText(url).then(function() {
+            btn.textContent = '✓';
+            setTimeout(function() { btn.innerHTML = '&#128279;'; }, 2000);
+        });
+    } else {
+        var textarea = document.createElement('textarea');
+        textarea.value = url;
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textarea);
+        btn.textContent = '✓';
+        setTimeout(function() { btn.innerHTML = '&#128279;'; }, 2000);
+    }
+}
