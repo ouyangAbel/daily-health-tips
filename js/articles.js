@@ -326,6 +326,17 @@ const articles = [
         excerpt: "Traditional Chinese postpartum recovery guide (Zuo Yue Zi). Learn ancient wisdom for new mothers: warming foods, rest practices, herbal baths, and gentle exercises for postpartum healing.",
         quote: "A month of careful recovery ensures a lifetime of health. A month of neglect creates a lifetime of illness.",
         quoteAuthor: "Traditional Chinese Medicine proverb"
+    },
+    {
+        id: 36,
+        slug: "menstrual-pain-relief-tcm",
+        title: "Menstrual Pain Relief with TCM: 5 Acupressure Points and Warming Remedies",
+        date: "2026-06-23",
+        category: "Women's Health",
+        icon: "🌸",
+        excerpt: "Discover how to relieve menstrual pain naturally with Traditional Chinese Medicine. Learn 5 powerful acupressure points, warming remedies, and herbal teas for period cramp relief.",
+        quote: "When the Qi and blood flow smoothly, there is no pain. When they stagnate, pain arises.",
+        quoteAuthor: "Traditional Chinese Medicine principle"
     }
 ];
 
