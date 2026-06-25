@@ -3,6 +3,17 @@
 
 const articles = [
     {
+        id: 37,
+        slug: "summer-heat-cooling-foods-acupressure",
+        title: "Summer Heat Relief: 6 TCM Cooling Soups and 4 Acupressure Points to Beat the Heat",
+        date: "2026-06-25",
+        category: "Nutrition",
+        icon: "🌞",
+        excerpt: "Beat summer heat with TCM cooling foods and acupressure. Learn 6 nourishing Chinese soups, 4 acupressure points, and lifestyle tips to stay cool and energized naturally this summer.",
+        quote: "In summer, eat cool to clear heat, drink warm to protect the spleen, and rest in shade to preserve Yin.",
+        quoteAuthor: "Traditional Chinese Medicine proverb"
+    },
+    {
         id: 1,
         slug: "mindful-tea-drinking",
         title: "The Art of Mindful Tea Drinking",
