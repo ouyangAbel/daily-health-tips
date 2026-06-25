@@ -3,6 +3,17 @@
 
 const articles = [
     {
+        id: 38,
+        slug: "womens-summer-qi-blood-nourishment",
+        title: "Women's Summer Qi & Blood Nourishment: 7 TCM Foods and Herbal Teas to Stay Energized",
+        date: "2026-06-26",
+        category: "Women's Health",
+        icon: "🌸",
+        excerpt: "Discover how to nourish Qi and Blood in summer with Traditional Chinese Medicine. Learn 7 TCM foods, herbal teas, and acupressure points specifically for women's health to stay energized, balanced, and vibrant all summer long.",
+        quote: "Women are governed by Blood. When Blood is abundant, the body is nourished, the spirit is calm, and the complexion glows.",
+        quoteAuthor: "Traditional Chinese Medicine principle"
+    },
+    {
         id: 37,
         slug: "summer-heat-cooling-foods-acupressure",
         title: "Summer Heat Relief: 6 TCM Cooling Soups and 4 Acupressure Points to Beat the Heat",
