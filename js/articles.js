@@ -3,6 +3,17 @@
 
 const articles = [
     {
+        id: 39,
+        slug: "moxibustion-guide",
+        title: "Moxibustion Therapy Guide: Ancient Heat Healing for Pain Relief, Immunity & Wellness",
+        date: "2026-06-29",
+        category: "TCM Remedies",
+        icon: "🔥",
+        excerpt: "Discover the ancient healing art of moxibustion — learn how this warming TCM therapy relieves pain, boosts immunity, improves circulation, and restores balance through targeted heat application at key acupoints.",
+        quote: "When there is stagnation, apply moxibustion to open the channels.",
+        quoteAuthor: "Traditional Chinese Medicine principle"
+    },
+    {
         id: 38,
         slug: "womens-summer-qi-blood-nourishment",
         title: "Women's Summer Qi & Blood Nourishment: 7 TCM Foods and Herbal Teas to Stay Energized",
