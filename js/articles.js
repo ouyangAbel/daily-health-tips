@@ -3,6 +3,17 @@
 
 const articles = [
     {
+        id: 40,
+        slug: "summer-cooling-herbal-teas",
+        title: "Summer Cooling Herbal Teas Guide: 8 TCM Recipes to Beat the Heat Naturally",
+        date: "2026-06-30",
+        category: "Nutrition",
+        icon: "🍵",
+        excerpt: "Discover 8 Traditional Chinese Medicine cooling herbal tea recipes to beat summer heat naturally. From chrysanthemum to sour plum, learn TCM properties, brewing methods, and the best times to drink each tea.",
+        quote: "A cup of herbal tea in summer is worth more than a thousand gold coins — it cools the fire within, moistens what is dry, and restores what the sun has taken.",
+        quoteAuthor: "Traditional Chinese Medicine proverb"
+    },
+    {
         id: 39,
         slug: "moxibustion-guide",
         title: "Moxibustion Therapy Guide: Ancient Heat Healing for Pain Relief, Immunity & Wellness",
