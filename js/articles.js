@@ -3,6 +3,17 @@
 
 const articles = [
     {
+        id: 41,
+        slug: "tcm-constitution-types-guide",
+        title: "TCM Body Constitution Types: Discover Your 中医体质 & Personalized Health Guide",
+        date: "2026-07-02",
+        category: "TCM Fundamentals",
+        icon: "⚖️",
+        excerpt: "Discover the 9 body constitution types in Traditional Chinese Medicine. Learn how to identify your TCM constitution and get personalized diet, lifestyle, and herbal recommendations for each type — from Qi Deficiency to Blood Stasis.",
+        quote: "Knowing your constitution is like having a map of your body's terrain. When you understand the landscape, you know which paths lead to health and which lead to illness.",
+        quoteAuthor: "Professor Wang Qi (王琦), pioneer of TCM Constitution Theory"
+    },
+    {
         id: 40,
         slug: "summer-cooling-herbal-teas",
         title: "Summer Cooling Herbal Teas Guide: 8 TCM Recipes to Beat the Heat Naturally",
