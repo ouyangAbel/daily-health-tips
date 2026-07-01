@@ -3,6 +3,17 @@
 
 const articles = [
     {
+        id: 42,
+        slug: "dong-bing-xia-zhi-winter-disease-summer-treatment",
+        title: "冬病夏治: Treat Winter Diseases in Summer — TCM's San Fu Tian Healing Guide",
+        date: "2026-07-02",
+        category: "Seasonal Health",
+        icon: "☀️",
+        excerpt: "Discover 冬病夏治 (Dong Bing Xia Zhi), TCM's ancient principle of treating winter diseases in summer. Learn San Fu Tian (三伏天) therapies — moxibustion, San Fu Tie herbal patches, warming foods, and lifestyle practices to heal asthma, arthritis, and cold-pattern conditions using peak summer Yang energy.",
+        quote: "Treat winter diseases in summer; treat summer diseases in winter. This is the way of following Yin and Yang, the method of harmonizing with the four seasons.",
+        quoteAuthor: "Huangdi Neijing (黄帝内经), the Yellow Emperor's Inner Canon"
+    },
+    {
         id: 41,
         slug: "tcm-constitution-types-guide",
         title: "TCM Body Constitution Types: Discover Your 中医体质 & Personalized Health Guide",
