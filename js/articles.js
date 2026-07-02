@@ -3,6 +3,17 @@
 
 const articles = [
     {
+        id: 43,
+        slug: "five-elements-wu-xing-guide",
+        title: "Five Elements Theory (五行): TCM's Guide to Body, Mind & Nature Harmony",
+        date: "2026-07-03",
+        category: "TCM Fundamentals",
+        icon: "☯️",
+        excerpt: "Discover the Five Elements Theory (五行学说 Wu Xing) — Traditional Chinese Medicine's foundational framework linking Wood, Fire, Earth, Metal, and Water to your organs, emotions, seasons, and diet. Learn how to apply the generating and controlling cycles for personalized health.",
+        quote: "The five elements are not five kinds of matter but five kinds of movement — five phases of Qi. They describe how energy rises, peaks, descends, consolidates, and rests. To know Wu Xing is to know the rhythm of life itself.",
+        quoteAuthor: "Huangdi Neijing (黄帝内经), the Yellow Emperor's Inner Canon"
+    },
+    {
         id: 42,
         slug: "dong-bing-xia-zhi-winter-disease-summer-treatment",
         title: "冬病夏治: Treat Winter Diseases in Summer — TCM's San Fu Tian Healing Guide",
