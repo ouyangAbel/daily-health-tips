@@ -3,6 +3,17 @@
 
 const articles = [
     {
+        id: 44,
+        slug: "tcm-sleep-insomnia-remedies",
+        title: "TCM Sleep Guide: Ancient Remedies to Cure Insomnia & Restore Restful Sleep Naturally",
+        date: "2026-07-04",
+        category: "Sleep Health",
+        icon: "🌙",
+        excerpt: "Discover Traditional Chinese Medicine sleep remedies for insomnia (失眠). Learn about the TCM body clock, acupressure points for sleep, herbal sleep teas, and ancient bedtime rituals that restore deep, restful sleep naturally.",
+        quote: "When Wei Qi travels in the Yang, one is awake. When Wei Qi travels in the Yin, one sleeps. If the harmony between Yin and Yang is lost, sleep becomes disordered.",
+        quoteAuthor: "Ling Shu (灵枢), the Spiritual Pivot"
+    },
+    {
         id: 43,
         slug: "five-elements-wu-xing-guide",
         title: "Five Elements Theory (五行): TCM's Guide to Body, Mind & Nature Harmony",
