@@ -3,6 +3,17 @@
 
 const articles = [
     {
+        id: 45,
+        slug: "tcm-porridge-congee-guide",
+        title: "TCM Medicinal Porridge Guide: 7 Healing Congees for Summer Digestion, Energy & Wellness",
+        date: "2026-07-05",
+        category: "Nutrition",
+        icon: "🥣",
+        excerpt: "Discover TCM medicinal porridge (药膳粥 Yao Shan Zhou) — the ancient Chinese healing food. Learn 7 congee recipes for summer: Spleen-strengthening Shanyao congee, Dampness-clearing Job's tears congee, Heat-clearing mung bean congee, and more. With Chinese yam, lotus seed, goji berry, and red dates for digestion, energy, and wellness.",
+        quote: "Congee is the foundation of dietary therapy. It harmonizes the Stomach, tonifies the Spleen, generates fluids, and moistens dryness. When combined with medicinal herbs, it treats illness without the harshness of strong decoctions. It is the gentlest path to healing.",
+        quoteAuthor: "Li Shizhen (李时珍), Bencao Gangmu (Compendium of Materia Medica), 1578"
+    },
+    {
         id: 44,
         slug: "tcm-sleep-insomnia-remedies",
         title: "TCM Sleep Guide: Ancient Remedies to Cure Insomnia & Restore Restful Sleep Naturally",
