@@ -3,6 +3,17 @@
 
 const articles = [
     {
+        id: 46,
+        slug: "cupping-therapy-baguan-guide",
+        title: "Cupping Therapy (拔罐): Ancient TCM Healing for Pain Relief, Detox & Wellness",
+        date: "2026-07-06",
+        category: "TCM Remedies",
+        icon: "🫙",
+        excerpt: "Discover cupping therapy (拔罐 Bá Guàn) — an ancient TCM technique for pain relief, detoxification, and wellness. Learn fire cupping, suction cupping, wet cupping, and sliding cupping, what the marks mean, how to prepare for a session, and aftercare tips for optimal results.",
+        quote: "Where there is stagnation, there is pain. Remove the stagnation, and the pain dissolves. Cupping does exactly this — it opens the gates, releases stagnation, and invites the Qi to flow freely once more.",
+        quoteAuthor: "Core principle of Traditional Chinese Medicine, tracing back to the Huangdi Neijing (黄帝内经), c. 2nd century BCE"
+    },
+    {
         id: 45,
         slug: "tcm-porridge-congee-guide",
         title: "TCM Medicinal Porridge Guide: 7 Healing Congees for Summer Digestion, Energy & Wellness",
