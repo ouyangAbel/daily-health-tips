@@ -3,6 +3,17 @@
 
 const articles = [
     {
+        id: 47,
+        slug: "tcm-facial-diagnosis-guide",
+        title: "TCM Facial Diagnosis (面诊): Read Your Health Through Your Face",
+        date: "2026-07-07",
+        category: "TCM Fundamentals",
+        icon: "🪞",
+        excerpt: "Learn TCM facial diagnosis (面诊 Miàn Zhěn) — how to read your health through your face. Discover what skin color, eye changes, and facial zones reveal about your organs in Traditional Chinese Medicine.",
+        quote: "The face is the mirror of the five organs. When the organs are at peace, the complexion shines. When the organs are disturbed, the colors shift. A skilled physician sees illness on the face before the patient speaks a word.",
+        quoteAuthor: "Huangdi Neijing (黄帝内经), the Yellow Emperor's Inner Canon, c. 200 BCE"
+    },
+    {
         id: 46,
         slug: "cupping-therapy-baguan-guide",
         title: "Cupping Therapy (拔罐): Ancient TCM Healing for Pain Relief, Detox & Wellness",
