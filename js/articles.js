@@ -3,6 +3,17 @@
 
 const articles = [
     {
+        id: 49,
+        slug: "tcm-meridian-system-guide",
+        title: "TCM Meridian System (经络): The Twelve Pathways of Qi — How Energy Flows Through Your Body",
+        date: "2026-07-09",
+        category: "TCM Fundamentals",
+        icon: "🫀",
+        excerpt: "Discover the TCM Meridian System (经络 Jīng Luò) — the twelve primary meridians that carry Qi, Blood, and nourishment through your body. Learn the 24-hour Qi circulation clock, Yin-Yang organ pairs, the Eight Extraordinary Vessels, key acupoints, and how to keep your meridians flowing for optimal health.",
+        quote: "The meridians are the paths through which Qi and Blood travel. They connect the interior with the exterior, the upper with the lower. Through them, the organs communicate, the body is nourished, and health is maintained.",
+        quoteAuthor: "Huangdi Neijing (黄帝内经), the Yellow Emperor's Inner Canon, c. 200 BCE"
+    },
+    {
         id: 48,
         slug: "ginger-therapy-tcm-guide",
         title: "Ginger Therapy (生姜疗法): TCM's Golden Root for Digestion, Immunity & Warmth",
