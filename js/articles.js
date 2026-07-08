@@ -3,6 +3,17 @@
 
 const articles = [
     {
+        id: 48,
+        slug: "ginger-therapy-tcm-guide",
+        title: "Ginger Therapy (生姜疗法): TCM's Golden Root for Digestion, Immunity & Warmth",
+        date: "2026-07-08",
+        category: "TCM Remedies",
+        icon: "🫚",
+        excerpt: "Discover ginger therapy (生姜疗法 Shēng Jiāng Liáo Fǎ) in Traditional Chinese Medicine. Learn how ginger warms the stomach, dispels cold, boosts immunity, and heals — with 5 TCM ginger remedies, key acupoints, and recipes for every season.",
+        quote: "The kitchen is the first pharmacy. Among all the herbs in the kitchen, ginger is the chief. It warms the middle, drives out cold, and harmonizes the Stomach — there is no simpler medicine.",
+        quoteAuthor: "Sun Simiao (孙思邈), Tang Dynasty physician, author of Qian Jin Yao Fang (千金要方)"
+    },
+    {
         id: 47,
         slug: "tcm-facial-diagnosis-guide",
         title: "TCM Facial Diagnosis (面诊): Read Your Health Through Your Face",
