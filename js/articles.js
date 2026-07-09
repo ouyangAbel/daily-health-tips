@@ -3,6 +3,17 @@
 
 const articles = [
     {
+        id: 50,
+        slug: "tuina-massage-therapy-guide",
+        title: "Tui Na Massage Therapy (推拿): TCM's Hands-On Healing for Pain Relief & Wellness",
+        date: "2026-07-10",
+        category: "TCM Remedies",
+        icon: "💆",
+        excerpt: "Discover Tui Na (推拿) massage therapy — Traditional Chinese Medicine's hands-on healing art. Learn 6 essential techniques for pain relief, tension release, and wellness with step-by-step self-massage routines for neck, back, shoulders, headaches, and digestion.",
+        quote: "Tui Na does not merely treat the symptom — it addresses the root. By working on the meridians and acupoints, it restores the body's own healing intelligence. The hands become the physician's most precise instruments.",
+        quoteAuthor: "Principle of Traditional Chinese Medicine, as recorded in the Huangdi Neijing (黄帝内经), c. 200 BCE"
+    },
+    {
         id: 49,
         slug: "tcm-meridian-system-guide",
         title: "TCM Meridian System (经络): The Twelve Pathways of Qi — How Energy Flows Through Your Body",
