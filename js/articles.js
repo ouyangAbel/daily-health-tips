@@ -3,6 +3,17 @@
 
 const articles = [
     {
+        id: 51,
+        slug: "yin-yang-theory-tcm-guide",
+        title: "Yin-Yang Theory (阴阳学说): The Core Principle of TCM Balance",
+        date: "2026-07-11",
+        category: "TCM Fundamentals",
+        icon: "☯️",
+        excerpt: "Discover Yin-Yang Theory (阴阳学说), the foundational principle of Traditional Chinese Medicine. Learn how Yin and Yang govern health, disease, diet, and daily life — with practical tips to restore balance naturally.",
+        quote: "Yin and Yang are the way of Heaven and Earth, the outline of everything, the parents of change, the origin of life and death. To heal without understanding Yin and Yang is to sail without a compass.",
+        quoteAuthor: "Huangdi Neijing (黄帝内经), the Yellow Emperor's Inner Canon, c. 200 BCE"
+    },
+    {
         id: 50,
         slug: "tuina-massage-therapy-guide",
         title: "Tui Na Massage Therapy (推拿): TCM's Hands-On Healing for Pain Relief & Wellness",
