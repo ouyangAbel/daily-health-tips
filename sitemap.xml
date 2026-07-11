@@ -46,7 +46,7 @@
   </url>
   <url>
     <loc>https://ZenHealthDay.com/articles.html</loc>
-    <lastmod>2026-07-10</lastmod>
+    <lastmod>2026-07-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
@@ -54,6 +54,13 @@
   <url>
     <loc>https://ZenHealthDay.com/articles/yin-yang-theory-tcm-guide.html</loc>
     <lastmod>2026-07-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://ZenHealthDay.com/articles/tcm-tongue-diagnosis-guide.html</loc>
+    <lastmod>2026-07-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

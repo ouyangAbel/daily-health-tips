@@ -3,6 +3,17 @@
 
 const articles = [
     {
+        id: 52,
+        slug: "tcm-tongue-diagnosis-guide",
+        title: "TCM Tongue Diagnosis (舌诊): Read Your Health Through Your Tongue",
+        date: "2026-07-12",
+        category: "TCM Fundamentals",
+        icon: "👅",
+        excerpt: "Learn TCM tongue diagnosis (舌诊 Shé Zhěn) — how to read your health through your tongue. Discover what tongue body color, coating, shape, and moisture reveal about your organs in Traditional Chinese Medicine.",
+        quote: "The tongue is the mirror of the Stomach. When the coating is thin and white, the Stomach is at peace. When it changes in color or thickness, the physician knows which organ is disturbed and which pathogen has entered.",
+        quoteAuthor: "Huangdi Neijing (黄帝内经), the Yellow Emperor's Inner Canon, c. 200 BCE"
+    },
+    {
         id: 51,
         slug: "yin-yang-theory-tcm-guide",
         title: "Yin-Yang Theory (阴阳学说): The Core Principle of TCM Balance",
