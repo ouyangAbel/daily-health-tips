@@ -3,6 +3,17 @@
 
 const articles = [
     {
+        id: 53,
+        slug: "acupressure-digestive-health-guide",
+        title: "Acupressure for Digestive Health: 7 Key Points to Soothe Your Stomach Naturally",
+        date: "2026-07-14",
+        category: "Acupressure & Wellness",
+        icon: "🫄",
+        excerpt: "Discover acupressure for digestive health — learn 7 powerful acupoints including Zusanli (ST36), Zhongwan (CV12), and Tianshu (ST25) to relieve bloating, indigestion, constipation, and stomach discomfort naturally with Traditional Chinese Medicine.",
+        quote: "The Stomach is the foundation of life. When the Stomach is strong, the five organs are nourished. When the Stomach is weak, the hundred diseases arise.",
+        quoteAuthor: "Huangdi Neijing (黄帝内经), the Yellow Emperor's Inner Canon, c. 200 BCE"
+    },
+    {
         id: 52,
         slug: "tcm-tongue-diagnosis-guide",
         title: "TCM Tongue Diagnosis (舌诊): Read Your Health Through Your Tongue",
