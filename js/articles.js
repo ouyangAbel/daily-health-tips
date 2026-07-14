@@ -3,6 +3,17 @@
 
 const articles = [
     {
+        id: 54,
+        slug: "tcm-stress-anxiety-relief-guide",
+        title: "TCM for Stress & Anxiety Relief: Calm Your Mind with Ancient Chinese Wisdom",
+        date: "2026-07-15",
+        category: "TCM Remedies",
+        icon: "🧘",
+        excerpt: "Discover TCM approaches to stress and anxiety relief. Learn how Traditional Chinese Medicine uses acupressure, herbal formulas like Xiao Yao San, qigong, and dietary therapy to calm the mind, soothe Liver Qi stagnation, and restore emotional balance naturally.",
+        quote: "When the emotions are excessive or prolonged, they damage the Qi. When Qi is damaged, the organs lose balance. When the organs lose balance, disease arises.",
+        quoteAuthor: "Huangdi Neijing (黄帝内经), the Yellow Emperor's Inner Canon, c. 200 BCE"
+    },
+    {
         id: 53,
         slug: "acupressure-digestive-health-guide",
         title: "Acupressure for Digestive Health: 7 Key Points to Soothe Your Stomach Naturally",
