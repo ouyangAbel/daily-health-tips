@@ -3,6 +3,17 @@
 
 const articles = [
     {
+        id: 55,
+        slug: "tcm-herbal-medicine-guide",
+        title: "Chinese Herbal Medicine Guide: 10 Classic TCM Herbs for Everyday Wellness",
+        date: "2026-07-16",
+        category: "TCM Remedies",
+        icon: "🌿",
+        excerpt: "Discover the most common Chinese herbal medicines and their health benefits. Learn about goji berries, astragalus, jujube dates, dang gui, Chinese yam, longan, lotus seeds, lily bulb, chrysanthemum, and cassia seeds — 10 classic TCM herbs used for thousands of years to nourish Qi, Blood, Yin, and Yang naturally.",
+        quote: "The superior physician prevents disease; the mediocre physician anticipates disease; the inferior physician treats disease after it has appeared.",
+        quoteAuthor: "Huangdi Neijing (黄帝内经), the Yellow Emperor's Inner Canon, c. 200 BCE"
+    },
+    {
         id: 54,
         slug: "tcm-stress-anxiety-relief-guide",
         title: "TCM for Stress & Anxiety Relief: Calm Your Mind with Ancient Chinese Wisdom",
