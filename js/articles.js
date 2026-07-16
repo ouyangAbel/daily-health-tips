@@ -3,6 +3,17 @@
 
 const articles = [
     {
+        id: 56,
+        slug: "five-flavors-tcm-dietary-therapy-guide",
+        title: "The Five Flavors (五味): TCM's Dietary Therapy Guide to Healing Through Taste",
+        date: "2026-07-17",
+        category: "Nutrition",
+        icon: "🍽️",
+        excerpt: "Discover the Five Flavors Theory (五味 Wǔ Wèi) in Traditional Chinese Medicine. Learn how sour, bitter, sweet, pungent, and salty foods heal your organs, balance Qi, and prevent disease through TCM dietary therapy. A comprehensive guide to eating with the five flavors for every season and constitution.",
+        quote: "The five flavors enter the stomach and each goes to its preferred organ. Sour enters the Liver, bitter enters the Heart, sweet enters the Spleen, pungent enters the Lung, salty enters the Kidney. When consumed in harmony, they nourish; when consumed in excess, they damage.",
+        quoteAuthor: "Huangdi Neijing (黄帝内经), the Yellow Emperor's Inner Canon, c. 200 BCE"
+    },
+    {
         id: 55,
         slug: "tcm-herbal-medicine-guide",
         title: "Chinese Herbal Medicine Guide: 10 Classic TCM Herbs for Everyday Wellness",
