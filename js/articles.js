@@ -3,6 +3,17 @@
 
 const articles = [
     {
+        id: 57,
+        slug: "tcm-qi-blood-theory-guide",
+        title: "TCM Qi and Blood Theory (气血学说): The Vital Substances That Sustain Life",
+        date: "2026-07-18",
+        category: "TCM Fundamentals",
+        icon: "🩸",
+        excerpt: "Discover TCM Qi and Blood Theory (气血学说) — the vital substances that sustain life in Traditional Chinese Medicine. Learn how Qi and Blood nourish your organs, how to spot deficiency signs, and practical acupressure, dietary, and lifestyle strategies to strengthen your vitality naturally.",
+        quote: "Qi is the commander of Blood. When Qi moves, Blood follows. Blood is the mother of Qi. Where Blood resides, Qi is nourished.",
+        quoteAuthor: "Classical TCM principle, from the Yi Zong Jin Jian (医宗金鉴, Golden Mirror of Medicine), Qing Dynasty"
+    },
+    {
         id: 56,
         slug: "five-flavors-tcm-dietary-therapy-guide",
         title: "The Five Flavors (五味): TCM's Dietary Therapy Guide to Healing Through Taste",
