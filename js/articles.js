@@ -3,6 +3,17 @@
 
 const articles = [
     {
+        id: 58,
+        slug: "tcm-liver-health-guide",
+        title: "TCM Liver Health Guide (疏肝养肝): Soothe the Liver, Restore Qi Flow & Balance Emotions",
+        date: "2026-07-24",
+        category: "TCM Remedies",
+        icon: "🌿",
+        excerpt: "Discover TCM Liver Health (疏肝养肝) — learn how the Liver governs Qi flow, how to recognize Liver Qi stagnation, and use acupressure, herbal teas, dietary therapy, and emotional wellness to soothe your Liver and restore balance naturally.",
+        quote: "The Liver is the general of the army — it is responsible for strategic planning and the smooth execution of the body's defenses.",
+        quoteAuthor: "Huangdi Neijing (黄帝内经), the Yellow Emperor's Inner Canon, c. 200 BCE"
+    },
+    {
         id: 57,
         slug: "tcm-qi-blood-theory-guide",
         title: "TCM Qi and Blood Theory (气血学说): The Vital Substances That Sustain Life",
