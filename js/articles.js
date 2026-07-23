@@ -3,6 +3,17 @@
 
 const articles = [
     {
+        id: 59,
+        slug: "tcm-kidney-health-guide",
+        title: "TCM Kidney Health Guide (补肾养肾): Nourish Your Essence, Strengthen Bones & Prolong Life",
+        date: "2026-07-24",
+        category: "TCM Fundamentals",
+        icon: "💧",
+        excerpt: "Discover TCM Kidney Health (补肾养肾) — learn how the Kidney stores Jing (essence), governs water, and anchors Qi. Recognize Kidney Yin and Yang deficiency, and use acupressure, herbal foods, and lifestyle practices to nourish your Kidney and prolong life naturally.",
+        quote: "The Kidney is the foundation of innate life. It stores the Jing, governs the water, and receives the Qi. When the Kidney is strong, the bones are firm, the hearing is sharp, the hair is lustrous, and life is long.",
+        quoteAuthor: "Huangdi Neijing (黄帝内经), the Yellow Emperor's Inner Canon, c. 200 BCE"
+    },
+    {
         id: 58,
         slug: "tcm-liver-health-guide",
         title: "TCM Liver Health Guide (疏肝养肝): Soothe the Liver, Restore Qi Flow & Balance Emotions",
