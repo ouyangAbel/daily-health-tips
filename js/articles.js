@@ -3,6 +3,17 @@
 
 const articles = [
     {
+        id: 60,
+        slug: "tcm-spleen-health-guide",
+        title: "TCM Spleen Health (健脾养胃): Transform Your Digestion & Energy",
+        date: "2026-07-25",
+        category: "TCM Remedies",
+        icon: "🍚",
+        excerpt: "Discover Traditional Chinese Medicine Spleen Health (健脾养胃) — learn how the Spleen transforms food into Qi and Blood, recognize Spleen Qi deficiency, and use dietary therapy, acupressure, and lifestyle practices to strengthen your digestion and boost energy naturally.",
+        quote: "The Spleen is the root of the postnatal body. It is the granary official from which the five flavors emerge. If the Spleen is weak, the whole body suffers.",
+        quoteAuthor: "Huangdi Neijing (黄帝内经), the Yellow Emperor's Inner Canon, c. 200 BCE"
+    },
+    {
         id: 59,
         slug: "tcm-kidney-health-guide",
         title: "TCM Kidney Health Guide (补肾养肾): Nourish Your Essence, Strengthen Bones & Prolong Life",
