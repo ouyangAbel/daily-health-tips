@@ -3,6 +3,17 @@
 
 const articles = [
     {
+        id: 61,
+        slug: "tcm-lung-health-guide",
+        title: "TCM Lung Health Guide (养肺): Strengthen Your Lungs, Skin & Immunity with Ancient Wisdom",
+        date: "2026-07-26",
+        category: "TCM Remedies",
+        icon: "🫁",
+        excerpt: "Discover Traditional Chinese Medicine Lung Health (养肺) — learn how the Lung governs Qi and respiration, protects the body's exterior, and maintains skin and immunity. Recognize Lung Yin and Lung Qi deficiency, and use dietary therapy, acupressure, and Qigong to strengthen your lungs naturally.",
+        quote: "The Lung is the canopy over the organs. It governs the Qi of the whole body, descends and disperses to regulate the water passages, and spreads the defensive Wei Qi to protect the body's exterior.",
+        quoteAuthor: "Huangdi Neijing (黄帝内经), the Yellow Emperor's Inner Canon, c. 200 BCE"
+    },
+    {
         id: 60,
         slug: "tcm-spleen-health-guide",
         title: "TCM Spleen Health (健脾养胃): Transform Your Digestion & Energy",
