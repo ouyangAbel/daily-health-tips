@@ -3,6 +3,17 @@
 
 const articles = [
     {
+        id: 62,
+        slug: "tcm-heart-health-guide",
+        title: "TCM Heart Health Guide (养心): Nourish Your Heart, Calm Your Shen & Cultivate Joy",
+        date: "2026-07-27",
+        category: "TCM Remedies",
+        icon: "❤️",
+        excerpt: "Discover Traditional Chinese Medicine Heart Health (养心) — learn how the Heart governs Blood, houses the Shen (spirit), opens into the tongue, and connects to joy. Recognize Heart Blood deficiency, Heart Yin deficiency, and Heart Fire, and use dietary therapy, acupressure, and Qigong to nourish your heart naturally.",
+        quote: "The Heart is the Emperor of the body. When the Emperor is wise and tranquil, the ministers serve with devotion, the borders are secure, and the people flourish.",
+        quoteAuthor: "Huangdi Neijing (黄帝内经), the Yellow Emperor's Inner Canon, c. 200 BCE"
+    },
+    {
         id: 61,
         slug: "tcm-lung-health-guide",
         title: "TCM Lung Health Guide (养肺): Strengthen Your Lungs, Skin & Immunity with Ancient Wisdom",
