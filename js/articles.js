@@ -3,6 +3,17 @@
 
 const articles = [
     {
+        id: 63,
+        slug: "autumn-wellness-lung-nourishment-tcm",
+        title: "Autumn Wellness in TCM: Nourish the Lung, Conquer Dryness & Prepare for Winter",
+        date: "2026-07-28",
+        category: "Seasonal Wellness",
+        icon: "🍂",
+        excerpt: "Discover Traditional Chinese Medicine autumn wellness — learn how to nourish the Lung, conquer seasonal dryness (燥), boost Wei Qi immunity, and prepare your body for winter with moistening dietary therapy, acupressure at LU9 and LU7, and the emotional release of the Metal element.",
+        quote: "In autumn, the Qi of the Lung is dominant. Nourish the Lung, collect the Yin, calm the Qi, and gather the spirit. This is the way of living in harmony with the autumn season.",
+        quoteAuthor: "Huangdi Neijing (黄帝内经), Su Wen, Chapter 2, c. 200 BCE"
+    },
+    {
         id: 62,
         slug: "tcm-heart-health-guide",
         title: "TCM Heart Health Guide (养心): Nourish Your Heart, Calm Your Shen & Cultivate Joy",
