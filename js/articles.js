@@ -3,6 +3,17 @@
 
 const articles = [
     {
+        id: 64,
+        slug: "tcm-memory-cognitive-health-guide",
+        title: "TCM Memory & Cognitive Health Guide: Sharpen Your Mind, Nourish Your Brain & Preserve Wisdom",
+        date: "2026-07-29",
+        category: "TCM Remedies",
+        icon: "🧠",
+        excerpt: "Discover Traditional Chinese Medicine memory and cognitive health — learn how the Kidney, Heart, and Spleen support brain function through the Jing-Marrow-Brain pathway, and use dietary therapy with walnuts, ginkgo nuts, and longan, acupressure at DU20 and KI3, and Qigong to sharpen memory and prevent cognitive decline.",
+        quote: "The brain is the Sea of Marrow. It is filled by Marrow descending from the Kidney, nourished by Blood from the Heart, and sustained by clear Qi from the Spleen.",
+        quoteAuthor: "Traditional Chinese Medicine principle, synthesized from the Huangdi Neijing and later clinical traditions"
+    },
+    {
         id: 63,
         slug: "autumn-wellness-lung-nourishment-tcm",
         title: "Autumn Wellness in TCM: Nourish the Lung, Conquer Dryness & Prepare for Winter",
