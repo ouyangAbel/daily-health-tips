@@ -3,6 +3,17 @@
 
 const articles = [
     {
+        id: 65,
+        slug: "tcm-facial-acupressure-beauty-massage",
+        title: "TCM Facial Acupressure & Beauty Massage: Natural Skin Rejuvenation",
+        date: "2026-07-31",
+        category: "TCM Beauty",
+        icon: "💆‍♀️",
+        excerpt: "Learn Traditional Chinese Medicine facial acupressure and beauty massage techniques. Discover how facial acupressure points, gua sha, and self-massage can lift, tone, and rejuvenate your skin naturally — while improving overall health through the stimulation of key acupoints like Yintang, Taiyang, and Yingxiang.",
+        quote: "When the Blood flows harmoniously, the complexion is radiant as jade. When the Qi is abundant, the skin is smooth as silk. Beauty is not painted from without — it blooms from within.",
+        quoteAuthor: "Traditional Chinese Medicine principle on facial radiance"
+    },
+    {
         id: 64,
         slug: "tcm-memory-cognitive-health-guide",
         title: "TCM Memory & Cognitive Health Guide: Sharpen Your Mind, Nourish Your Brain & Preserve Wisdom",
