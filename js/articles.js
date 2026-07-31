@@ -3,6 +3,17 @@
 
 const articles = [
     {
+        id: 66,
+        slug: "tcm-healthy-hair-scalp-care-guide",
+        title: "TCM Guide to Healthy Hair & Scalp Care: Nourish Your Roots & Restore Shine",
+        date: "2026-08-01",
+        category: "TCM Beauty",
+        icon: "💇‍♀️",
+        excerpt: "Discover Traditional Chinese Medicine guide to healthy hair and scalp care. Learn how TCM nourishes hair roots, prevents hair loss, and restores natural shine through dietary therapy with black sesame and walnuts, scalp acupressure at DU20 and GB20, herbal rinses with He Shou Wu, and lifestyle practices rooted in Kidney essence nourishment.",
+        quote: "The hair is the surplus of Blood and the manifestation of the Kidney. When the Kidney is strong and Blood is abundant, the hair is like silk and ink.",
+        quoteAuthor: "Traditional Chinese Medicine principle, synthesized from the Huangdi Neijing (黄帝内经), c. 200 BCE"
+    },
+    {
         id: 65,
         slug: "tcm-facial-acupressure-beauty-massage",
         title: "TCM Facial Acupressure & Beauty Massage: Natural Skin Rejuvenation",
