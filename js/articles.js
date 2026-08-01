@@ -3,6 +3,17 @@
 
 const articles = [
     {
+        id: 67,
+        slug: "tcm-allergies-hay-fever-guide",
+        title: "TCM for Allergies & Hay Fever: Natural Relief from Seasonal Allergies",
+        date: "2026-08-02",
+        category: "TCM Remedies",
+        icon: "🤧",
+        excerpt: "Discover TCM for allergies and hay fever (过敏症). Learn how Traditional Chinese Medicine uses acupressure, herbal teas, dietary therapy, and lifestyle practices to relieve seasonal allergies, sneezing, itchy eyes, and nasal congestion naturally.",
+        quote: "When Wei Qi is strong, the body is defended. External pathogens cannot enter. When Wei Qi is deficient, Wind rides in through the open gates, and the nose runs, the eyes itch, and the sneezes follow.",
+        quoteAuthor: "Huangdi Neijing (黄帝内经), the Yellow Emperor's Inner Canon, c. 200 BCE"
+    },
+    {
         id: 66,
         slug: "tcm-healthy-hair-scalp-care-guide",
         title: "TCM Guide to Healthy Hair & Scalp Care: Nourish Your Roots & Restore Shine",
