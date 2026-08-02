@@ -3,6 +3,17 @@
 
 const articles = [
     {
+        id: 68,
+        slug: "tcm-joint-health-bone-strengthening",
+        title: "TCM Joint Health & Bone Strengthening: Relieve Pain, Restore Mobility & Build Strong Bones",
+        date: "2026-08-03",
+        category: "TCM Remedies",
+        icon: "🦴",
+        excerpt: "Discover TCM joint health and bone strengthening (强筋壮骨). Learn how Traditional Chinese Medicine uses acupressure, herbal foods, Qigong, and dietary therapy to relieve joint pain, strengthen bones, and restore mobility naturally.",
+        quote: "The Kidney governs the bones and produces Marrow. The Liver governs the tendons and stores the Blood. When the Kidney is strong, the bones are firm; when the Liver is nourished, the tendons are supple.",
+        quoteAuthor: "Huangdi Neijing (黄帝内经), the Yellow Emperor's Inner Canon, c. 200 BCE"
+    },
+    {
         id: 67,
         slug: "tcm-allergies-hay-fever-guide",
         title: "TCM for Allergies & Hay Fever: Natural Relief from Seasonal Allergies",
