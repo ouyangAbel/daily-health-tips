@@ -3,6 +3,17 @@
 
 const articles = [
     {
+        id: 69,
+        slug: "winter-wellness-kidney-nourishment-tcm",
+        title: "Winter Wellness in TCM: Nourish the Kidney, Store Essence & Embrace the Water Element",
+        date: "2026-08-04",
+        category: "Seasonal Wellness",
+        icon: "❄️",
+        excerpt: "Discover Traditional Chinese Medicine winter wellness — learn how to nourish the Kidney, store Jing essence, dispel Cold, and build deep vitality with warming dietary therapy, moxibustion, acupressure, and seasonal lifestyle practices rooted in the Water element.",
+        quote: "The Kidney is the foundation of innate life. It stores the Jing, governs the water, and receives the Qi. When the Kidney is strong, the bones are firm, the hearing is sharp, the hair is lustrous, and life is long.",
+        quoteAuthor: "Huangdi Neijing (黄帝内经), the Yellow Emperor's Inner Canon, c. 200 BCE"
+    },
+    {
         id: 68,
         slug: "tcm-joint-health-bone-strengthening",
         title: "TCM Joint Health & Bone Strengthening: Relieve Pain, Restore Mobility & Build Strong Bones",
