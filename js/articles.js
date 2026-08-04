@@ -3,6 +3,17 @@
 
 const articles = [
     {
+        id: 70,
+        slug: "late-summer-earth-element-spleen-wellness-tcm",
+        title: "Late Summer TCM Wellness: The Fifth Season — Nourish the Spleen, Clear Dampness & Harmonize the Earth Element",
+        date: "2026-08-05",
+        category: "Seasonal Wellness",
+        icon: "🌍",
+        excerpt: "Discover Traditional Chinese Medicine Late Summer (长夏) wellness — learn about TCM's fifth season, the Earth element, how to nourish the Spleen, clear Dampness, and harmonize digestion with warming dietary therapy, acupressure, and seasonal lifestyle practices rooted in the Chang Xia principle.",
+        quote: "The Spleen and Stomach are the granary officials of the body. They store the food and transform it into the five flavors — and into the Qi and Blood that sustain all life.",
+        quoteAuthor: "Huangdi Neijing (黄帝内经), the Yellow Emperor's Inner Canon, c. 200 BCE"
+    },
+    {
         id: 69,
         slug: "winter-wellness-kidney-nourishment-tcm",
         title: "Winter Wellness in TCM: Nourish the Kidney, Store Essence & Embrace the Water Element",
