@@ -3,6 +3,17 @@
 
 const articles = [
     {
+        id: 71,
+        slug: "tcm-seven-emotions-guide",
+        title: "TCM Seven Emotions (七情): How Emotions Damage Organs & How to Heal",
+        date: "2026-08-06",
+        category: "TCM Fundamentals",
+        icon: "🧠",
+        excerpt: "Discover the TCM Seven Emotions (七情, Qī Qíng) — how joy, anger, worry, sadness, fear, and shock affect specific organs. Learn Traditional Chinese Medicine's mind-body connection for emotional health and organ balance.",
+        quote: "The seven emotions are the innate endowment of the human being. When they are calm and harmonious, the organs function in peace. When they are excessive or suppressed, the organs are damaged from within.",
+        quoteAuthor: "Huangdi Neijing (黄帝内经), the Yellow Emperor's Inner Canon, c. 200 BCE"
+    },
+    {
         id: 70,
         slug: "late-summer-earth-element-spleen-wellness-tcm",
         title: "Late Summer TCM Wellness: The Fifth Season — Nourish the Spleen, Clear Dampness & Harmonize the Earth Element",
