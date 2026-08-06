@@ -3,6 +3,17 @@
 
 const articles = [
     {
+        id: 72,
+        slug: "tcm-mens-health-prostate-vitality-andropause",
+        title: "TCM for Men's Health: Prostate, Vitality & Andropause",
+        date: "2026-08-07",
+        category: "Men's Health",
+        icon: "💪",
+        excerpt: "Discover TCM for men's health — learn how Traditional Chinese Medicine supports prostate health, vitality, hormonal balance, and andropause through Kidney essence nourishment, dietary therapy, acupressure, and Qigong.",
+        quote: "The Kidney is the foundation of innate life. It stores the Jing, governs the water, and receives the Qi. When the Kidney is strong, the bones are firm, the hearing is sharp, the hair is lustrous, and the reproductive fire burns bright.",
+        quoteAuthor: "Huangdi Neijing (黄帝内经), the Yellow Emperor's Inner Canon, c. 200 BCE"
+    },
+    {
         id: 71,
         slug: "tcm-seven-emotions-guide",
         title: "TCM Seven Emotions (七情): How Emotions Damage Organs & How to Heal",
