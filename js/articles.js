@@ -3,6 +3,17 @@
 
 const articles = [
     {
+        id: 73,
+        slug: "tcm-weight-management-guide",
+        title: "TCM Guide to Healthy Weight Management",
+        date: "2026-08-08",
+        category: "TCM Weight Management",
+        icon: "⚖️",
+        excerpt: "Discover TCM weight management — learn how Traditional Chinese Medicine balances the Spleen, clears Dampness, and achieves healthy weight through acupressure, herbal foods, dietary therapy, and lifestyle practices rooted in TCM wisdom.",
+        quote: "Obesity is not caused by excess flesh, but by deficiency of Spleen Qi and accumulation of Dampness. To lose weight, strengthen the Spleen and drain the Damp — do not starve the body.",
+        quoteAuthor: "Traditional Chinese Medicine principle, synthesized from the Huangdi Neijing (黄帝内经), c. 200 BCE"
+    },
+    {
         id: 72,
         slug: "tcm-mens-health-prostate-vitality-andropause",
         title: "TCM for Men's Health: Prostate, Vitality & Andropause",
